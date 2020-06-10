@@ -87,6 +87,10 @@ export interface LineChartProps {
    */
   fromZero?: boolean;
   /**
+   * Max value for y-axis
+   */
+  yMaxValue?: number;
+  /**
    * Prepend text to horizontal labels -- default: ''.
    */
   yAxisLabel?: string;
