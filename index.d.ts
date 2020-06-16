@@ -208,6 +208,8 @@ export interface LineChartProps {
    * The number of horizontal lines
    */
   segments?: number;
+
+  yLabelColors?: (index: number) => string;
 }
 
 export class LineChart extends React.Component<LineChartProps> {}
