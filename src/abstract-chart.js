@@ -111,7 +111,8 @@ class AbstractChart extends Component {
     const {
       yAxisLabel = "",
       yAxisSuffix = "",
-      yLabelsOffset = 12
+      yLabelsOffset = 12,
+      yLabelColors
     } = this.props;
 
     return [...Array(count === 1 ? 1 : count + 1).keys()].map((i, _) => {
@@ -145,6 +146,7 @@ class AbstractChart extends Component {
           textAnchor="end"
           y={y}
           {...this.getPropsForLabels()}
+          fill={yLabelColors(i)}
         >
           {yLabel}
         </Text>
